@@ -15,4 +15,4 @@ _cache/*
 !_cache/index.html
 _logs/*
 !_logs/index.html
-_themes/node_modules/*
+_themes/sincuru/node_modules/*
