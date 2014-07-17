@@ -1,0 +1,40 @@
+<div class="row">
+
+
+	<div class="large-6 columns right">	
+		<div class="form">
+			<div class="clear10"></div>
+			<h2 class="main">Contact</h2>
+			{{ if {raven:success} }}
+			<h4>Good job, son!</h4>
+			{{ endif }}
+
+			{{ raven:form formset="contact" }}
+			  <input type="text" name="name" placeholder="Full Name" value="{{ value:name }}" />
+			  <input type="email" name="email" placeholder="Email" value="{{ value:email }}" />
+			  <input type="text" name="Telephone" placeholder="Telephone" value="{{ value:telephone }}" />
+			  <textarea placeholder="Message" name="message">{{ value:message }}</textarea>
+			  <input class="submit" type="submit" value="Submit">
+			{{ /raven:form }}	
+
+		<ul class="social">
+			<li><a href="http://facebook.com/sincuru" target="_blank"><i class="fa-facebook-square fa"></i></a></li>
+			<li><a href="http://twitter.com/sincuru" target="_blank"><i class="fa-twitter-square fa"></i></a></li>
+			<li><a href="http://linkedin.com/company/sincuru" target="_blank"><i class="fa-linkedin-square fa"></i></a></li>
+			<li><a href="http://pinterest.com/sincuru" target="_blank"><i class="fa-pinterest-square fa"></i></a></li>
+			<li><a href="http://instagram/sincuru" target="_blank"><i class="fa-instagram fa"></i></a></li>
+			<li><a href="http://google.com/+sincuruinc" target="_blank"><i class="fa-google-plus-square fa"></i></a></li>
+			<li><a href="http://youtube.com/sincuru" target="_blank"><i class="fa-youtube-square fa"></i></a></li>
+		</ul>
+		</div>	
+	</div>
+</div>
+
+
+
+<div id="myModal" class="reveal-modal" data-reveal>
+  <h2>About Us</h2>
+	<p>We waste 1.3 billion tons of food every year, a thirst of our global production, and for silly reasons ranging from cosmetic standards for farm produce at the early stage to cloudy use-by-date practices at the late stage. Why couldn’t it be otherwise? Why not bringing edible food back to where it belongs, our homes, our tables? </p>
+	<p>At Sincuru, we profoundly believe it should be the case. So we recover that food, select it carefully, and deliver it to your community. Simply. Getting your farm produce will be enjoyable again, and you’ll effortlessly shop with a cause!</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>

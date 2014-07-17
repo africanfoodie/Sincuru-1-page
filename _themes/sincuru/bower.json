@@ -1,0 +1,6 @@
+{
+  "name": "Statamic-Series8-Foundation5",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  }
+}
