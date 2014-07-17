@@ -21,13 +21,13 @@ _language: en
 _site_root: /
 
 # Name of your site
-_site_name: Another Awesome Statamic Site
+_site_name: Sincuru 
 
 # Change the folder name for your content directory
 _content_root: _content
 
 # Used for permalinks
-_site_url: http://statamic.com
+_site_url: http://sincuru.com
 
 # Folder name of your desired theme
 _theme: sincuru
@@ -42,7 +42,7 @@ _date_format: 'F jS, Y'
 _time_format: 'g:i.s a'
 
 # Timezone
-_timezone: America/New_York
+_timezone: London
 
 # List of desired taxonomy triggers
 _taxonomy:
@@ -169,7 +169,8 @@ _admin_nav:
   help:      true
   view_site: true
   logout:    true
-  raven: true
+
+
 
 # When you log in, where would you like to start?
 _admin_start_page: pages
