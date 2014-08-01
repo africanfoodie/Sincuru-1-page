@@ -2,7 +2,7 @@
 
 
 $black: #1b1b1b;
-$green: #49c138;
+$green: #3ecc69;
 
 .clear10{padding:10px 0 10px 0;}
 .clear20{padding:20px 0 20px 0;}
@@ -12,7 +12,7 @@ $green: #49c138;
 
 
 body{
-  background: url('../img/bg6.jpg') no-repeat center center fixed; 
+  background: url('../img/bg_main.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,7 +38,6 @@ input, textarea {
 }
 
 .strip{
-	background: $black;
 	padding: 0 0 116px;
 
 	img{
@@ -60,7 +59,7 @@ nav{
 	}
 
 	li.rounded{
-		border: solid 1px #49c138;
+		border: solid 1px $green;
 		border-radius: 6px;
 		padding: 7px 20px;
 
