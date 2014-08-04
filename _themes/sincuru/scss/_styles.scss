@@ -38,6 +38,9 @@ background:$green;
 
 
 #three{
+	@media only screen and (max-width: 40em){
+		height:auto;
+	}
 
 	background:$black;
 	padding:20px 0 20px 0;
