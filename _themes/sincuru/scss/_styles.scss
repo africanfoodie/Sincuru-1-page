@@ -157,10 +157,18 @@ nav{
 }
 
 .main-text{
+
 	text-align: center;
 
 	padding-top:70px;
-	@media only screen and (max-width: 40em){padding-top:0;}
+	@media only screen and (max-width: 40em){
+		padding-top:0;
+		h1{
+			font-size:40px !important;
+			letter-spacing: -1px;
+		}
+
+	}
 	h1{
 		font-size:55px;
 		font-weight: 900;
