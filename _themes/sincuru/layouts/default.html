@@ -2,21 +2,30 @@
 <body>
   
 
+<div id="main">
+  
+{{ theme:partial src="_header" }}
 
-      {{ theme:partial src="_header" }}
+<div id="one">
+{{ layout_content }}
+</div>
+
+<div id="two" name="content">
+  {{ theme:partial src="_about"}}
+</div>
+
+<div id="three" name="invite">
+  {{ theme:partial src="_request"}}
+</div>
 
 
-  <div class="row">
-    <div class="large-12 columns">
-      {{ layout_content }}
-    </div>
-  </div>
+<div id="four">
+  {{ theme:partial src="_footer"}}
+</div>
 
-  <div class="row">
-    <div class="large-12 columns">
-      {{ theme:partial src="_footer" }}
-    </div>
-  </div>
+
+
+</div>
 
 
 <script src="{{ theme_path }}bower_components/jquery/dist/jquery.min.js"></script>

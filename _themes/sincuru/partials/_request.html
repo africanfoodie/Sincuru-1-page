@@ -1,0 +1,25 @@
+<div class="row">
+	<div class="large-6 columns large-centered full">	
+		<div class="form1">
+			<div class="clear10"></div>
+			<h2>Request a Beta Invite</h2>
+			<p>We will create a bespoke account group to our beta platform for your company.</p>
+			{{ if {raven:success} }}
+			<h4 class="alert1">Amazing! We will have an invite sent to you ASAP!</h4>
+			{{ endif }}
+
+			{{ raven:form formset="request" }}
+			  <input type="text" name="Firstname" placeholder="First Name" value="{{ value:firstname }}" />
+			  <input type="text" name="Lastname" placeholder="Last Name" value="{{ value:lastname }}" />
+			  <input type="text" name="Company / Group" placeholder="Company / Group Name" value="{{ value:group }}" />
+			  <input type="email" name="Email" placeholder="Email" value="{{ value:email }}" />
+			  <input type="text" name="Telephone" placeholder="Telephone" value="{{ value:telephone }}" />
+			  <textarea placeholder="Notes" name="notes">{{ value:notes }}</textarea>
+			  <input class="submit" type="submit" value="Submit">
+			{{ /raven:form }}	
+
+		</div>	
+	</div>
+</div>
+
+

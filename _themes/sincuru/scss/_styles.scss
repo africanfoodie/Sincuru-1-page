@@ -3,6 +3,8 @@
 
 $black: #494949;
 $green: #3ecc69;
+$orange:#ff7f00;
+$browne:#b59b7c;
 
 .clear10{padding:10px 0 10px 0;}
 .clear20{padding:20px 0 20px 0;}
@@ -10,6 +12,44 @@ $green: #3ecc69;
 .clear40{padding:40px 0 40px 0;}
 .clear50{padding:50px 0 50px 0;}
 
+#main{
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+#one{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#two{
+width: 100%;
+height: 100%;
+overflow: hidden;
+background:$green;
+}
+
+
+#three{
+
+	background:$black;
+	padding:20px 0 20px 0;
+	height:100%;
+
+}
+
+.arrow{
+	margin:0 auto;
+	width:64px;
+	padding-top:30px;
+}
+.button-container{
+	padding-top:85px;
+	text-align:center;
+}
 
 body{
   background: url('../img/bg_main.jpg') no-repeat center center fixed; 
@@ -17,15 +57,32 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color:white;
 }
 
+section, h1,h2,h3,h4,p{color:white;}
+
 input, textarea {
-	border-radius:6px;
+	border-radius:3px;
 	border:none !important;
 	box-shadow:none !important;
 }
 
+.alert1{
+	font-size: 14px;
+	background: $green;
+	padding: 6px;
+	border-radius: 3px;
+}
 .form input.submit{
+	float: right;
+	padding: 14px;
+	background: $green;
+	color: white;
+	cursor: pointer;
+}
+
+.form1 input.submit{
 	float: right;
 	padding: 14px;
 	background: $green;
@@ -35,6 +92,31 @@ input, textarea {
 
 .grn-square{
 	background:$green;
+}
+
+.green{
+	background:$green;
+	border-radius: 3px;
+	color:white;
+
+	&:hover{
+		color:white;
+		background:  $green;
+		opacity:0.9;
+	}
+}
+
+
+.orange{
+	background:$orange;
+	border-radius: 3px;
+	color:white;
+
+	&:hover{
+		color:white;
+		background:  $orange;
+		opacity:0.9;
+	}
 }
 
 .strip{
@@ -68,14 +150,16 @@ nav{
 }
 
 .main-text{
+	text-align: center;
 
-	padding-top:30px;
+	padding-top:70px;
 	@media only screen and (max-width: 40em){padding-top:0;}
 	h1{
-		font-size:60px;
+		font-size:55px;
 		font-weight: 900;
 		letter-spacing: -3px;
 		color: white;
+
 	}
 
 	h4{
@@ -84,6 +168,98 @@ nav{
 
 	}
 
+}
+
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+@mixin animation($animation) {
+  -webkit-animation: #{$animation};
+	-moz-animation: #{$animation};
+	-ms-animation: #{$animation};
+	animation: #{$animation};
+}
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+@include keyframes(bounce) {
+	0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+	40% {
+    @include transform(translateY(-30px));
+  }
+	60% {
+    @include transform(translateY(-15px));
+  }
+}
+
+.bounce {
+  @include animation(bounce 2s infinite);
+}
+
+.wrap{
+	padding-top:100px;
+}
+
+img.icon2{
+	padding-bottom: 18px;
+	padding-top:20px;
+}
+
+img.icon3{
+	padding-top:12px;
+	padding-bottom: 9px;
+}
+
+.block{
+	background:white;
+	margin:0 auto;
+	padding:15px;
+	text-align:center;
+	min-height: 319px;
+
+	-webkit-box-shadow: 2px 2px 0px 2px rgba(240,237,240,1);
+	-moz-box-shadow: 2px 2px 0px 2px rgba(240,237,240,1);
+	box-shadow: 2px 2px 0px 2px rgba(240,237,240,1);
+
+	p {color: $black;}
+
+	h4{
+		color:$orange;
+		font-weight: bold;
+	}
+
+}
+
+.full{
+	width:100%;
+}
+
+.form1{
+	input{padding:25px}
+	textarea{padding: 16px 25px 25px 25px;}
+
+	.submit{
+		padding: 20px 70px !important;	
+		font-size: 16px;
+	}
 }
 
 input.main-input{
@@ -112,6 +288,17 @@ input.black{
 
 h2.main{color:white;}
 
+.form{
+	padding: 20px;
+	border: 1px solid white;
+	border-radius: 6px;
+}
+
+.form1{
+	padding: 20px;
+	margin-bottom: 60px;
+}
+
 .social{
 	font-size:20px;
 	color:white;
@@ -122,7 +309,28 @@ h2.main{color:white;}
 	}
 }
 
+.content {
+  background: #222;
+  box-shadow: 0 -1px 2px rgba(black,0.4); 
+  color: #fff;
+  margin-top: 400px;
+  padding: 4% 0 200px;
+  position: relative;
+  z-index: 2;
+  
+  .inner {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 40px 30px;
+  }
+ 
+}
 
+.right p{padding-top:25px;}
+
+.footer{
+	padding-top:15px;
+}
 
 #footer{
 	height:100px;
