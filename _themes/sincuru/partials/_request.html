@@ -9,12 +9,9 @@
 			{{ endif }}
 
 			{{ raven:form formset="request" }}
-			  <input type="text" name="Firstname" placeholder="First Name" value="{{ value:firstname }}" />
-			  <input type="text" name="Lastname" placeholder="Last Name" value="{{ value:lastname }}" />
+			  <input type="text" name="Fullname" placeholder="Full Name" value="{{ value:fullname }}" />
 			  <input type="text" name="Company / Group" placeholder="Company / Group Name" value="{{ value:group }}" />
 			  <input type="email" name="Email" placeholder="Email" value="{{ value:email }}" />
-			  <input type="text" name="Telephone" placeholder="Telephone" value="{{ value:telephone }}" />
-			  <textarea placeholder="Notes" name="notes">{{ value:notes }}</textarea>
 			  <input class="submit" type="submit" value="Submit">
 			{{ /raven:form }}	
 
