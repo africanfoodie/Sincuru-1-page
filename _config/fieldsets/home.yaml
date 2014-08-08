@@ -5,6 +5,11 @@ fields:
     display: Template
     type: templates
 
+  delivery:
+    display: Delivery Window
+    type:text
+    required: false
+
   fruity_image:
     type: file
     destination: assets/img/blog/

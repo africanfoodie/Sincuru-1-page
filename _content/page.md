@@ -50,4 +50,5 @@ mix_content: |
   - 500g of Tomatoes
   - 2 Cucumber
   - 500g of Carrots
+delivery: Order by Saturday 12pm get your bag on Monday 12pm
 ---
