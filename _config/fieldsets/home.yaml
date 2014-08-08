@@ -1,0 +1,54 @@
+title: Home
+
+fields:
+  _template:
+    display: Template
+    type: templates
+
+  fruity_image:
+    type: file
+    destination: assets/img/blog/
+
+  fruity_price:
+    display: Fruity Price
+    type: text
+    required: false
+
+  fruity_content:
+    display: Fruity Content
+    required: false
+    default:
+    type: markitup
+
+  veggie_image:
+    type: file
+    destination: assets/img/blog/
+
+  veggie_price:
+    display: Veggie Price
+    type: text
+    required: false
+
+  veggie_content:
+    display: Veggie Content
+    required: false
+    default:
+    type: markitup
+
+  mix_image:
+    type: file
+    destination: assets/img/blog/
+
+  mix_price:
+    display: Mix Price
+    type: text
+    required: false
+
+  mix_content:
+    display: Mix Content
+    required: false
+    default:
+    type: markitup
+
+
+

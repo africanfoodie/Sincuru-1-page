@@ -46,6 +46,19 @@ background:$green;
 	padding:20px 0 20px 0;
 	height:100%;
 
+	p, li{
+		font-size: 13px;
+	}
+
+	img{
+		width:50%;
+	}
+
+	h1{
+		font-size: 22px;
+		color:$green;
+	}
+
 }
 
 .arrow{
@@ -57,7 +70,7 @@ background:$green;
 	@media only screen and (max-width: 40em) { 
 		padding-top:0px;
 	}
-	padding-top:85px;
+	padding-top:35px;
 	text-align:center;
 }
 
@@ -160,6 +173,14 @@ nav{
 }
 
 .main-text{
+
+	span{
+		color:$green;
+		font-size: 27px;
+		font-weight: bold;
+		letter-spacing: -1px;
+		border-bottom: 1px solid;
+	}
 
 	text-align: center;
 
